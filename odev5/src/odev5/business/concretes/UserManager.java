@@ -127,6 +127,11 @@ UserDao userDao;
 				System.out.println("Sisteme baþarýlý giriþ yapýldý..");
 				
 			}
+			else {
+				System.out.println("Sisteme  giriþ baþarýsýz..");
+
+			}
+			
 			
 		}
 		else {
