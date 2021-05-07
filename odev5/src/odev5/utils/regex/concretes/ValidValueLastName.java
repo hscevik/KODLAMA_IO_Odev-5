@@ -6,7 +6,7 @@ public class ValidValueLastName implements Reg{
 
 	@Override
 	public boolean isItValidValue(String value) {
-		if(value.length()<6) {
+		if(value.length()<2) {
 			System.out.println("Soyad en az 2 haneli olmalý");
 			return false;
 		}else {

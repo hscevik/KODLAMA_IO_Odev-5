@@ -9,6 +9,7 @@ import odev5.utils.information.concretes.Mail›nformation;
 import odev5.utils.information.concretes.SendMailActiveLink;
 import odev5.utils.regex.abstracts.Reg;
 import odev5.utils.regex.concretes.ValidValueFirstName;
+import odev5.utils.regex.concretes.ValidValueLastName;
 import odev5.utils.regex.concretes.ValidValueMail;
 import odev5.utils.regex.concretes.ValidValuePassword;
 
@@ -71,7 +72,7 @@ UserDao userDao;
 		Reg regPass=new ValidValuePassword();
 		Reg reg=new ValidValueMail();	
 		Reg regFirstName=new ValidValueFirstName();
-		Reg regLastName=new ValidValueFirstName();
+		Reg regLastName=new ValidValueLastName();
 
 		if (reg.isItValidValue(user.getMail())&&regPass.isItValidValue(user.getPassword())&&regFirstName.isItValidValue(user.getFirstName())&&regLastName.isItValidValue(user.getLastName()) ){
 			
